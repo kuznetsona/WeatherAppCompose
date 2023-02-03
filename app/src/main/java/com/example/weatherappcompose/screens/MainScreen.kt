@@ -88,7 +88,7 @@ fun MainScreen(currentDay: MutableState<WeatherModel>) {
                 )
 
                 Text(
-                    text = currentDay.value.time,
+                    text = currentDay.value.time.split(' ')[0],
                     style = TextStyle(
                         fontSize = 10.sp,
                         color = Background
@@ -101,8 +101,8 @@ fun MainScreen(currentDay: MutableState<WeatherModel>) {
                             "@2x.png",
                     contentDescription = "02d",
                     modifier = Modifier
-                        .size(110.dp)
-                        .padding(top = 40.dp)
+                        .size(100.dp)
+                        .padding(top = 30.dp)
                 )
 
                 Text(

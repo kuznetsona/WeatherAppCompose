@@ -112,7 +112,7 @@ private fun getWeatherByDays(response: String): List<WeatherModel> {
                 item.getString("dt_txt").toString(),
                 "",
                 item.getJSONArray("weather")
-                    .getJSONObject(0).getString("main").toString(),
+                    .getJSONObject(0).getString("main"),
                 item.getJSONObject("wind")
                     .getString("speed").toFloat().toInt().toString(),
                 item.getJSONArray("weather")
